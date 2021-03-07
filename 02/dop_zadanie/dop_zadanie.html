@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Изучение тега Form</h1></header>
+    <main>
+        <section>
+            <form action="#" method="POST" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+                <fieldset>
+                    <legend><h2>Общие данные</h2></legend>
+                    <label>Заблокированное поле: </label><br>
+                    <input type="text" value="Не удалять этот текст!" disabled><br><br>
+                    <label>Обычный текст:</label><br>
+                    <input type="text" readonly value="Только чтение"><br><br>
+                    <label>Введите ваше имя и фамилию:</label><br>
+                    <input type="text" name="first_name" placeholder="Паша Мисюра"><br><br>
+                    <label>Введите адресс электронной почты:</label><br>
+                    <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+                    <label>Укажите ваш пол:</label><br>
+                    <input id="mal" type="radio" name="gender" value="male">
+                    <label for="mal">Мужской</label>
+                    <input id="fem" type="radio" name="gender" value="female">
+                    <label for="fem">Женский</label><br><br>
+                    <label>Дата вашего рождения:</label><br>
+                    <input type="date" name="birth">
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h2>Ещё пара пунктов:</h2>
+                    </legend>
+                    <label>Цвет, которым вы хотите разукрасить стену на кухне:</label><br>
+                        <input type="color" name="color"><br><br>
+                        <label>Номер мобильного вашей собаки:</label><br>
+                        <input type="tel" name="tel"><br><br>
+                        <label>Ссылка на любимый сайт:</label><br>
+                                <input type="url" name="url"><br><br>
+                        <label>Сколько у вас сейчас времени:</label><br>
+                        <input type="time" name="time"><br><br>
+                        <label>Какую машину предпочитаете?</label><br>
+                                <select name="cars[]" multiple size="5">
+                                    <option value="">--Select car--</option>
+                                    <option value="Audi">Ауди</option>
+                                    <option value="Mercedes">Мерседес</option>
+                                    <option value="Toyota">Тойота</option>
+                                    <option value="Reno">Рено</option>
+                                    <option value="Lamborgini">Ламборгини</option>
+                                </select><br><br>
+                        <label>Ваш тайный пароль:</label><br>
+                        <input type="password"><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend><h2>Кнопки:</h2></legend>
+                    <input type="reset" name="res">
+                                <button name="Just">Просто нажать</button>
+                    <input type="submit" name="sub">
+                    
+                </fieldset>
+            </form>
+        </section>
+                </main>
+</body>
+</html>
