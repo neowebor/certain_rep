@@ -59,7 +59,7 @@ background: linear-gradient(0deg, #9b0c4e 0%, #be076f 100%); /* w3c */
 }
 
 .promo {
-    background: url('../images/flower.jpg') right top no-repeat;
+    background: url('../images/flower.jpg') right 45 px top no-repeat;
     height:260px; 
 }
 
