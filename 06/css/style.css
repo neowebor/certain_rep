@@ -62,7 +62,7 @@ h3 {
 	border-radius: 50%;
 	border: 1px solid #1275b9;
 	background-color: #1275b9;
-	background-image: url(/images/sprite.png);
+	background-image: url(../images/sprite.png);
 	background-repeat: no-repeat;
 	margin-bottom: 7px;
 }
