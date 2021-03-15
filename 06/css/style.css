@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color:#9d9d9d;
+    font-size: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+    line-height: 24px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    transition: all .2s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+p {
+	font-weight: 300;
+	line-height: 20px;
+}
+
+h3 {
+	font-family: 'Proxima Nova';
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.main_block {
+    padding: 56px 0 66px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content li {
+	display: inline-block;
+	width: 33.3333%;
+	margin: 0 -2px;
+	padding: 0 30px;
+}
+
+.icon {
+	display: inline-block;
+	width: 66px;
+	height: 65px;
+	border-radius: 50%;
+	border: 1px solid #1275b9;
+	background-color: #1275b9;
+	background-image: url(/images/sprite.png);
+	background-repeat: no-repeat;
+	margin-bottom: 7px;
+}
+
+.icon:hover {
+	background-color: #fff;
+}
+
+.icon_phone {
+    background-position: 20px 18px;
+}
+
+.icon_phone:hover {
+    background-position: 20px -62px;
+}
+
+.icon_settings {
+    background-position: -80px 17px;
+}
+
+.icon_settings:hover {
+    background-position: -80px -64px;
+}
+
+.icon_dashboard {
+    background-position: -169px 17px;
+}
+
+.icon_dashboard:hover {
+    background-position: -169px -62px;
+}
+
+
+
+
+
+
+
+
+
+
