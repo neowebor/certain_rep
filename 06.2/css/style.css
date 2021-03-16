@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    background-color: #3B3F45;
+    font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
+    border: 25px solid #fff;
+}
+
+html {
+	height: 100%;
+}
+html, body {
+	min-height: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+header {
+    background-color:#4A4F56;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 46px;
+    padding-bottom: 12px;
+}
+
+header h1 {
+    color:#EB7E7F;
+    font-size: 36px;
+}
+
+header span {
+    color: #EB7E7F;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.my_list {
+    list-style: none;
+    padding: 0;
+	margin: 0 0 40px;
+	color: #fff;
+}
+
+
+.my_list li {
+    position: relative;
+    font-size: 25px;
+	background: #88839E;
+    border: 3px solid transparent;
+
+}
+
+.my_list li:nth-child(2n) {
+    background-color:#7A7593;
+}
+
+.my_list li:hover{
+	background:#5F6073 ;
+	border-bottom: 3px solid #fff;
+	border-top: 3px solid #fff;
+}
+
+.my_list li:active {
+	background:#EB7E7F;
+}
+
+.my_list [type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left:15px;
+}
+
+.my_list [type="checkbox"]:checked ~ span {
+    text-decoration: line-through;
+    color: #a3a0b5;
+}
+
+.my_list label{
+	display: block;
+	padding: 15px 20px 13px 15px;
+	cursor: pointer;
+}
+
+.first_text {
+    font-size: 25px;
+    color:#F9F9F9;
+    padding-left: 49px;
+    vertical-align: middle;
+}
+
+.second_text {
+    color:#CDCBCB;
+    font-size: 15px;
+	vertical-align: middle;
+}
+
+.second_text::before {
+    content: ' ( ';
+    padding-left: 5px;
+}
+
+.second_text::after {
+    content: ' ) ';
+}
+
+footer {
+    text-align: center;
+	background: #4A4F56;
+	padding: 20px 0;
+	color: #eb7e7f;
+    font-size:26px;
+}
