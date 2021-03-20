@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Lucida';
+    src: url('../font/LucidaSansUnicode.eot');
+    src: local('../font/Lucida Sans Unicode'), local('LucidaSansUnicode'),
+        url('../font/LucidaSansUnicode.eot?#iefix') format('embedded-opentype'),
+        url('../font/LucidaSansUnicode.woff2') format('woff2'),
+        url('../font/LucidaSansUnicode.woff') format('woff'),
+        url('../font/LucidaSansUnicode.svg#LucidaSansUnicode') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Lucida Grande';
+    src: url('../font/LucidaGrande.eot');
+    src: local('../font/Lucida Grande'), local('LucidaGrande'),
+        url('../font/LucidaGrande.eot?#iefix') format('embedded-opentype'),
+        url('../font/LucidaGrande.woff2') format('woff2'),
+        url('../font/LucidaGrande.woff') format('woff'),
+        url('../font/LucidaGrande.ttf') format('truetype'),
+        url('../font/LucidaGrande.svg#LucidaGrande') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Weather Icons';
+    src: url('../font/WeatherIcons-Regular.eot');
+    src: local('../font/Weather Icons Regular'), local('WeatherIcons-Regular'),
+        url('../font/WeatherIcons-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/WeatherIcons-Regular.woff2') format('woff2'),
+        url('../font/WeatherIcons-Regular.woff') format('woff'),
+        url('../font/WeatherIcons-Regular.ttf') format('truetype'),
+        url('../font/WeatherIcons-Regular.svg#WeatherIcons-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #3399cc;
+    font-family:'Lucida', sans-serif;
+    color: #fff;
+    border: 24px solid #2b81ac;
+}
+
+.container {
+    width: 90%;
+    max-width: 984px;
+    margin: 0 auto;
+}
+
+header {
+    margin: 26px 0 30px;
+    display: inline-block;
+}
+
+header h1 {
+    font-size: 31px;
+    font-weight: 300;
+}
+
+header .wi {
+    vertical-align: middle;
+}
+
+.cities {
+    list-style: none;
+    padding: 3px;
+    font-size: 26px;  
+    background: #fff;
+} 
+
+.cities li .cities_name {
+    font-weight: normal;
+    font-size: 26px;
+    padding: 23px 0 12px;
+}
+
+.cities li .temperature:after {
+    content: '°C';
+}
+
+.cities li .temperature,
+.cities li .wi {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.cities li .wi {
+    font-size: 40px;
+}
+
+.cities:hover > li {
+    opacity: 0.5;
+}
+
+.cities li {
+    text-align: center;
+    display: inline-block;
+    height: 148px;
+    border: 3px solid #fff;
+    width: 25%;
+}
+
+.cities li.name_san_francisco {
+    width: 50%;
+}
+
+.cities li:hover {
+    opacity: 1;
+} 
+
+.cities li:first-child {
+    width: 50%;
+}
+
+.cities li:last-child {
+    width: 100%;
+}
+
+.cities li:nth-child(1) {
+    background: #3399CC;
+}
+.cities li:nth-child(2) {
+    background: #33CCCC;
+}
+.cities li:nth-child(3) {
+    background: #996699;
+}
+.cities li:nth-child(4) {
+    background: #C24747;
+}
+.cities li:nth-child(5) {
+    background: #e2674a;
+}
+.cities li:nth-child(6) {
+    background: #FFCC66;
+}
+.cities li:nth-child(7) {
+    background: #99CC99;
+}
+.cities li:nth-child(8) {
+    background: #669999;
+}
+.cities .name_san_francisco {
+    background: #CC6699;
+}
+.cities li:nth-child(10) {
+    background: #339966;
+}
+.cities li:nth-child(11) {
+    background: #666699;
+}
+
+footer {
+    font-size: 20px;
+    margin: 28px 0 134px;
+    letter-spacing: 0.4px;
+}
