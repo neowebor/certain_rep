@@ -50,7 +50,11 @@ header .wi {
 .cities li .cities_name {
     font-weight: normal;
     font-size: 26px;
-    padding: 23px 0 12px;
+    padding: 0 0 12px;
+}
+
+.cities li .bg {
+    padding: 23px 0;
 }
 
 .cities li .temperature:after {
@@ -75,8 +79,7 @@ header .wi {
 .cities li {
     text-align: center;
     display: inline-block;
-    height: 148px;
-    border: 3px solid #fff;
+    padding: 3px;
     width: 25%;
 }
 
@@ -96,39 +99,40 @@ header .wi {
     width: 100%;
 }
 
-.cities li:nth-child(1) {
+
+.cities li:nth-child(1) .bg {
     background: #3399CC;
 }
-.cities li:nth-child(2) {
+.cities li:nth-child(2) .bg{
     background: #33CCCC;
 }
-.cities li:nth-child(3) {
+.cities li:nth-child(3) .bg{
     background: #996699;
 }
-.cities li:nth-child(4) {
+.cities li:nth-child(4) .bg{
     background: #C24747;
 }
-.cities li:nth-child(5) {
+.cities li:nth-child(5) .bg{
     background: #e2674a;
 }
-.cities li:nth-child(6) {
+.cities li:nth-child(6) .bg {
     background: #FFCC66;
 }
-.cities li:nth-child(7) {
+.cities li:nth-child(7) .bg {
     background: #99CC99;
 }
-.cities li:nth-child(8) {
+.cities li:nth-child(8) .bg {
     background: #669999;
 }
-.cities .name_san_francisco {
+.cities .name_san_francisco .bg{
     background: #CC6699;
 }
-.cities li:nth-child(10) {
+.cities li:nth-child(10) .bg{
     background: #339966;
 }
-.cities li:nth-child(11) {
+.cities li:nth-child(11) .bg{
     background: #666699;
-}
+} 
 
 footer {
     font-size: 20px;
