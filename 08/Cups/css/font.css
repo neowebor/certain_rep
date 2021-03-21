@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Miso';
+    src: url('../font/Miso-Bold.eot');
+    src: local(''),
+        url('../font/Miso-Bold.woff2') format('woff2'),
+        url('../font/Miso-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../font/Miso.eot');
+    src: local(''),
+        url('../font/Miso.woff2') format('woff2'),
+        url('../font/Miso.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
