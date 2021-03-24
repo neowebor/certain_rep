@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color:#464f54;
+    font-family: 'Georgia', serif;
+    font-size: 26.92px;
+    color:#000;
+}
+
+header {
+    width: 64.5%;
+    position: absolute;
+    top: 49px;
+    right: 0;
+    min-width: 340px;
+    z-index: 3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1060px;
+    margin: 149px auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.container_text {
+    padding: 200px 119px 22px 125px;
+}
+
+.line {
+    position: absolute;
+    top:0;
+    left: 67px;
+    height: 100%;
+    width: 2px;
+    background-color: #e8eced;
+}
+
+.subtitle {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-size: 19.84px;
+    text-transform: uppercase;
+    color: #b4b4b4;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.my-title {
+    font-family: 'Futura PT', sans-serif;
+    font-size: 77.93px;
+    color: #2a2a2a;
+    margin-bottom:-6px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.my-descr {
+    font-style: italic;
+    font-size: 30px;
+    color: #8f8f8f;
+    margin-bottom: 48px;
+}
+
+p {
+    margin-bottom: 22px;
+    line-height: 40px;
+}
+
+
+.b-title {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-transform: uppercase;
+    color: #767676;
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding: 5px 0 9px 4px;
+}
+
+.input-block {
+    height: 187px;
+    background-color: #181818;
+    padding-left: 60px;
+    padding-top: 40px;
+    z-index: 3;
+}
+
+.input {
+    font-family: serif;
+    width: 816px;
+    height: 64px;
+    background-color: #181818;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #303030;
+    color: #fff;
+    padding:0 0 20px 1px;
+    font-size: 50px;
+}
+
+.block-icon {
+    height: 76px;
+    background-color: #fbc02d;
+    position: absolute;
+    left: 64px; 
+    width: 100%; 
+}
+
+.block-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 29px;
+}
+
+.block-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.icon {
+    padding-left: 16px;
+    width: 38px;
+    height: 38px;
+    font-size: 37px;
+    opacity: 0.5;
+    color: #fff;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.block-icon li a {
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.span {
+    font-style: italic;
+}
+

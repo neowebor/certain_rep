@@ -111,3 +111,7 @@ button:hover {
     color: #fff;
     border: 2px solid #fff;
 }
+
+.clearfix {
+    clear: both;
+}
