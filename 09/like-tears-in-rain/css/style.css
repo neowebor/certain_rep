@@ -115,15 +115,13 @@ p {
     background-color: #fbc02d;
     position: absolute;
     left: 64px; 
-    width: 100%; 
-}
-
-.block-icon {
+    width: 94.8%; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 29px;
 }
+
 
 .block-icon li {
     display: inline-block;
