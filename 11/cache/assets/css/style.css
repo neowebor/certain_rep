@@ -15,7 +15,7 @@ body {
 }
 
 section.white-block {
-    background-color: #f9f8fb;
+    background: url(../images/fon.png) bottom right 200px no-repeat;
     color: #262626;
     position: relative;  
 }
@@ -24,11 +24,6 @@ section.white-block {
     width: 90%;
     max-width: 1170px;
     margin: 0 auto;
-}
-
-.white-container {
-    background: url(../images/fon.png) bottom right no-repeat;
-    background-position: 332px 0px;
 }
 
 .first-screen {
