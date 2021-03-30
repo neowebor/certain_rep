@@ -15,7 +15,7 @@ body {
 }
 
 section.white-block {
-    background: url(../images/fon.png) bottom right 200px no-repeat;
+    background: #f9f8fb url(../images/fon.png) bottom right 200px no-repeat;
     color: #262626;
     position: relative;  
 }
