@@ -451,13 +451,11 @@ section.purple-block{
 .form__control-textarea:focus {
     background-color: rgba(0, 196, 196, 1);
     border-left: 5px solid #355b82;
-    transform: scale(1.06)
 }
 
 .form__control-input:hover,
 .form__control-textarea:hover {
     background-color: rgba(0, 196, 196, 1);
-    transform: scale(1.06)
 }
 
 .form__control-textarea {

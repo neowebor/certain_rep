@@ -22,18 +22,19 @@
                 <div class="form_inner">
                     <div class="form_control">
                         <label for="name" class="input_name">Username</label>
-                        <input type="text" class="input_field" id="name" required>
+                        <input type="text" name="name" class="input_field" id="name" required>
                     </div>
                     <div class="form_control">
                         <label for="pass" class="input_name">Password</label>
-                        <input type="password" class="input_field" id="pass" required>
+                        <input type="password" name="password" class="input_field" id="pass" required>
                     </div>
                     <div class="my_checkbox">
-                        <input type="checkbox" id="ch_1" checked>
-                        <label for="ch_1"></label>
-                        <div class="agreement_text">
-                            Keep me signed in
-                        </div>
+                        <input type="checkbox" name="checkbox" id="ch_1" checked>
+                        <label for="ch_1">
+                            <div class="agreement_text">
+                                Keep me signed in
+                            </div>
+                        </label>
                     </div>
                 </div>
                 <button type="submit" class="green_button">Sign in</button>
