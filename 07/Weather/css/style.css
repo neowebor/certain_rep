@@ -41,6 +41,8 @@ header .wi {
 }
 
 .cities {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 3px;
     font-size: 26px;  
@@ -83,21 +85,15 @@ header .wi {
     width: 25%;
 }
 
-.cities li.name_san_francisco {
+li.w50 {
     width: 50%;
 }
-
+li.w100 {
+    width: 100%;
+}
 .cities li:hover {
     opacity: 1;
 } 
-
-.cities li:first-child {
-    width: 50%;
-}
-
-.cities li:last-child {
-    width: 100%;
-}
 
 
 .cities li:nth-child(1) .bg {
@@ -124,7 +120,7 @@ header .wi {
 .cities li:nth-child(8) .bg {
     background: #669999;
 }
-.cities .name_san_francisco .bg{
+.cities li:nth-child(9) .bg{
     background: #CC6699;
 }
 .cities li:nth-child(10) .bg{
@@ -138,4 +134,17 @@ footer {
     font-size: 20px;
     margin: 28px 0 134px;
     letter-spacing: 0.4px;
+}
+
+
+@media screen and (max-width: 765px) {
+    .cities li {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cities li, li.w50{
+        width: 100%;
+    }
 }
