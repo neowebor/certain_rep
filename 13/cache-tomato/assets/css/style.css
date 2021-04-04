@@ -33,62 +33,72 @@ a {
   text-align: center;
 }
 
-section.block-tomato {
+.block-tomato {
   background: #70bfff url(../images/tomato.png) top 100px right 415px no-repeat;
 }
-section.block-tomato .flex-block {
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.block-tomato__inner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.block-tomato .flex-block .container-tomato {
+
+.inner__wrapper {
   width: 90%;
-  max-width: 1070px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 179px 0 150px;
+  padding: 177px 0 150px;
 }
-section.block-tomato .flex-block .container-tomato .column {
-  width: calc(100% - 62.6%);
+
+.inner__list {
+  width: calc(90% - 52%);
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item {
+.inner__list .list__item {
   width: 100%;
   height: 100px;
   background-color: #fff;
   margin-bottom: 20px;
   position: relative;
   box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item-box {
+.inner__list .list__item-box {
   width: 60%;
   line-height: 1.35;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item-box--first {
+.inner__list .list__item-box--first {
   margin-left: 72px;
   padding-top: 37px;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item-box--second {
+.inner__list .list__item-box--second {
   margin-left: 76px;
   padding-top: 37px;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item-box--third {
+.inner__list .list__item-box--third {
   margin-left: 31px;
   padding-top: 22px;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item-box--fourth {
+.inner__list .list__item-box--fourth {
   margin-left: 82px;
   padding-top: 37px;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item:hover, section.block-tomato .flex-block .container-tomato .column__list .list__item .list__icon:hover {
-  fill: #fff;
+.inner__list .list__item:hover {
   background-color: #3da8ff;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item:hover .list__link {
+.inner__list .list__item:hover .list__icon {
+  fill: #fff;
+}
+.inner__list .list__item:hover .list__link {
   color: #fff;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item::before {
+.inner__list .list__item::before {
   content: "";
   display: block;
   width: 3px;
@@ -100,15 +110,15 @@ section.block-tomato .flex-block .container-tomato .column__list .list__item::be
   transform: scale(0);
   transition: all 0.3s ease;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item:hover::before {
+.inner__list .list__item:hover::before {
   transform: scale(1);
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item .list__link {
+.inner__list .list__item .list__link {
   display: flex;
   align-items: center;
   text-align: center;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item .list__link:before {
+.inner__list .list__item .list__link:before {
   content: "";
   display: block;
   position: absolute;
@@ -118,24 +128,25 @@ section.block-tomato .flex-block .container-tomato .column__list .list__item .li
   width: 1px;
   background-color: #9d9d9d;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item:hover .list__link:before {
+.inner__list .list__item:hover .list__link:before {
   background-color: #fff;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item .list__icon {
+.inner__list .list__item .list__icon {
   width: 55px;
   height: 55px;
   position: absolute;
   right: 21px;
   top: 24px;
 }
-section.block-tomato .flex-block .container-tomato .column__list .list__item:last-child {
+.inner__list .list__item:last-child {
   margin-bottom: 0;
 }
-section.block-tomato .flex-block .container-tomato .column2 {
-  width: 62.6%;
+
+.inner__title {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 126px;
-  padding-bottom: 85px;
+}
+.inner__title h2 {
+  margin: -87px -18px 0 0;
 }

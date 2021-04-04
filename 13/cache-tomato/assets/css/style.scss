@@ -21,119 +21,122 @@ a {
     text-align: center;
 }
 
-section {
-    &.block-tomato{
-        
-        background: #70bfff url(../images/tomato.png) top 100px right 415px no-repeat;
-        .flex-block {
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .container-tomato {
-                width: 90%;
-                max-width: 1070px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-between;
-                padding: 179px 0 150px;
-                .column {
-                    width:calc(100% - 62.6%);
-                    &__list .list{
-                        &__item {
-                            width: 100%;
-                            height: 100px;
-                            background-color: #fff;
-                            margin-bottom: 20px;
-                            position: relative;
-                            box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
-                            transition: all .3s ease;
-                            &-box {
-                                width: 60%;
-                                line-height: 1.35;
-                                &--first {
-                                    margin-left: 72px;
-                                    padding-top: 37px;
-                                }
-                                &--second {
-                                    margin-left: 76px;
-                                    padding-top: 37px;   
-                                }
-                                &--third {
-                                    margin-left: 31px;
-                                    padding-top: 22px;
+.block-tomato{     
+    background: #70bfff url(../images/tomato.png) top 100px right 415px no-repeat;
+}
 
-                                }
-                                &--fourth {
-                                    margin-left: 82px;
-                                    padding-top: 37px;   
-                                }
-                            }
+.container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
 
-                            &:hover, .list__icon:hover {
-                                fill: #fff;
-                                background-color: darken(#70bfff, 10);
-                            }
-                            &:hover .list__link {
-                                color: #fff;
-                            }
-                            &::before {
-                                content: "";
-                                display: block;
-                                width: 3px;
-                                height: 100%;
-                                position: absolute;
-                                bottom: 0px;
-                                left: -10px;
-                                background-color: #fff;
-                                transform: scale(0);
-                                transition: all .3s ease;
-                            }
-                            &:hover::before {
-                                transform: scale(1);
-                            }
-                            .list__link {
-                                display: flex;
-                                align-items: center;
-                                text-align: center;
-                                // padding-top: 36px;
-                                // margin-left: 72px;
-                                &:before {
-                                    content: '';
-                                    display: block;
-                                    position: absolute;
-                                    top: 0;
-                                    right: 98px;
-                                    height: 100%;
-                                    width: 1px;
-                                    background-color: #9d9d9d;
-                                }
-                            }
-                            &:hover .list__link:before {
-                                background-color: #fff;
-                            }
-                            .list__icon {
-                                width: 55px;
-                                height: 55px;
-                                position: absolute;
-                                right: 21px;
-                                top: 24px;
-                            }
-                        }
-                        &__item:last-child {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-                .column2 {
-                    width: 62.6%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding-left: 126px;
-                    padding-bottom: 85px;
-                }
+.block-tomato__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner__wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 177px 0 150px;
+}
+
+.inner__list{
+    width: calc(90% - 52%);
+    .list__item {
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        position: relative;
+        box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all .2s ease;
+        &-box {
+            width: 60%;
+            line-height: 1.35;
+            &--first {
+                margin-left: 72px;
+                padding-top: 37px;
+            }
+            &--second {
+                margin-left: 76px;
+                padding-top: 37px;   
+            }
+            &--third {
+                margin-left: 31px;
+                padding-top: 22px;
+
+            }
+            &--fourth {
+                margin-left: 82px;
+                padding-top: 37px;   
             }
         }
+
+        &:hover {
+            background-color: darken(#70bfff, 10);
+        }
+        &:hover .list__icon{
+            fill:#fff;
+        }
+        &:hover .list__link {
+            color: #fff;
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 3px;
+            height: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: -10px;
+            background-color: #fff;
+            transform: scale(0);
+            transition: all .3s ease;
+        }
+        &:hover::before {
+            transform: scale(1);
+        }
+        .list__link {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 98px;
+                height: 100%;
+                width: 1px;
+                background-color: #9d9d9d;
+            }
+        }
+        &:hover .list__link:before {
+            background-color: #fff;
+        }
+        .list__icon {
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            right: 21px;
+            top: 24px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}    
+.inner__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        margin: -87px -18px 0 0;
     }
 }
