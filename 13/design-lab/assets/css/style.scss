@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    min-width:320px;
 }
 
 .container {
@@ -23,10 +24,6 @@ body {
     margin: 0 auto;
 }
 
-.title {
-    padding: 0 100px;
-}
-
 .block {
     h2 {
         text-align: center;
@@ -36,37 +33,34 @@ body {
     }
 }
 
-.services {
+.decor {
     position: relative;
-    &::before {
+    &::before, &::after {
         content: '';
         display: block;
-        background-color: #fff;
-        width: 30%;
+        width: calc((100% - 350px)/2);
+        background-color: #3c3c3c;
         height: 2px;
         position: absolute;
         top: 0px;
+        transition: all .2s ease;
+    }
+    &::before {
         left: 0;
     }
     &::after {
-        content: '';
-        display: block;
-        background-color: #fff;
-        width: 30%;
-        height: 2px;
-        position: absolute;
-        top:0;
         right: 0;
     }
 }
 
 .design-block {
     background: url(../images/background-man.png) top right / cover no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding:50px 0 100px;
 }
 
 .services-block {
@@ -108,14 +102,14 @@ body {
         line-height: 1.93;
         letter-spacing: 0.9px;
         text-transform: uppercase;
-    }  
+    }
     &__mouse {
         position: absolute;
         height: 40px;
         width: 24px;
         border-radius: 15px;
         border: 2px solid #fff;
-        bottom: 80px;
+        bottom: 50px;
         left: 50%;
         margin-left: -12px;
         &::before {
@@ -135,8 +129,8 @@ body {
 .about {
     position: relative;
     border: 2px solid #3c3c3c;
+    border-top: none;
     &__title {
-        background-color: #fff;     
         position: relative;
         top: -24px;
         text-transform: uppercase;
@@ -155,7 +149,7 @@ body {
                 margin: 0 auto 24px;
             }
         }
-        
+
     }
 }
 
@@ -164,6 +158,9 @@ body {
     position: relative;
     border: 2px solid #fff;
     border-top: none;
+    &::before, &::after {
+        background-color: #fff;
+    } 
     &__title {
         color: #fff;
         position: relative;
@@ -183,6 +180,7 @@ body {
 .action {
     position: relative;
     border: 2px solid #3c3c3c;
+    border-top: none;
     &__title {
         background-color: #fff;
         position: relative;
@@ -196,7 +194,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         &-logo {
             width: 80px;
             height: 80px;
@@ -214,7 +212,7 @@ body {
         &-text {
             font-size: 14px;
             font-weight: 300;
-            line-height: 1.85;            
+            line-height: 1.85;
             text-align: center;
             color:#3c3c3c;
             margin-bottom: 19%;
@@ -228,11 +226,11 @@ body {
     flex-wrap: wrap;
     &__item {
         position: relative;
-        width: 28.67%;
+        width: calc(29% - 7px);
         margin-bottom: 10px;
     }
     &__big {
-        width: 41.67%;
+        width: calc(42% - 7px);
     }
     &__title {
         color: #fff;
@@ -244,7 +242,7 @@ body {
         left: 47px;
         text-transform: uppercase;
     }
-    &__item--small {   
+    &__item--small {
         width: calc(28.5% - 7px);
     }
     &__item--wide {
@@ -261,12 +259,13 @@ body {
     margin-top: 138px;
     position: relative;
     border: 2px solid #3c3c3c;
+    border-top: none;
     &__title {
         font-size: 30px;
         color: #3c3c3c;
         letter-spacing: 4.8px;
         font-weight: 700;
-        background-color: #fff;     
+        background-color: #fff;
         position: relative;
         top: -15px;
         text-transform: uppercase;
@@ -324,12 +323,17 @@ body {
 
 @media screen and (max-width:1000px) {
     .gallery {
-        &__item {
-            margin-bottom: 4px;
-        }
         &__title {
             bottom: 23px;
-            left: 28px;
+            left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .gallery {
+        &__title {
+            left: 20px;
         }
     }
 }
@@ -351,19 +355,63 @@ body {
     }
 }
 
-@media screen and (max-width: 800px) {
-    .title {
-        padding: 0 70px;
+@media screen and (max-height: 620px) {
+    .about-block {
+        padding: 108px 0;
     }
-    .services {
-        &::before {
-            width: 20%;
+}
+
+@media screen and (max-height: 540px) {
+    .design {
+        &__logo {
+            margin-bottom: 40px;
         }
-        &::after {
-            width: 20%;
+        &__title h1{
+            font-size: 45px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+    }
+    .list {
+        margin-top: 50px;
+        &__item {
+            &-text {
+                margin-bottom: 15%;
+            }
         }
     }
 }
+
+@media screen and (max-height: 400px) {
+    .design {
+        &__logo {
+            margin: 0 0 33px 21px;
+        }
+        &__title h1{
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .about-block {
+        padding: 88px 0;
+    }
+    .services-block {
+        padding: 88px 0;
+    }
+    .list {
+        margin-bottom: 50px;
+    }
+    .contact {
+        margin-top: 105px;
+    }
+}
+
+
+
 @media screen and (max-width: 600px) {
     .about {
         p {
@@ -373,13 +421,10 @@ body {
     }
     .contact__text {
         width: 85%;
-    }  
+    }
 }
 
 @media screen and (max-width: 540px) {
-    .title {
-        padding:0 40px;
-    }
     .gallery {
         &__item, &__big {
             height: 200px;
@@ -388,26 +433,21 @@ body {
     }
     .list__item {
         &-text {
-           width: 85%; 
-        }
-    }
-    .services {
-        &::before {
-            width: 12%;
-        }
-        &::after {
-            width: 12%;
+           width: 85%;
         }
     }
 }
 
+@media screen and (max-width: 440px) {
+ .decor {
+        &::before, &::after {
+            width: calc((100% - 270px)/2);
+        }
+    }
+}
 @media screen and (max-width: 400px) {
     .action > .title {
-        padding: 0 10px;
         word-spacing: -7px;
-    }
-    .title {
-        padding: 0 30px;
     }
     .design {
         &__title h1 {
@@ -421,9 +461,6 @@ body {
 }
 
 @media screen and (max-width: 340px) {
-    .title {
-        padding: 0 10px;
-    }
     .copy {
         &__logo {
             margin-left: 42px;
@@ -435,9 +472,6 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    .title {
-        padding: 0 10px;
-    }
     .design {
         &__title h1 {
             font-size: 40px;
@@ -455,21 +489,12 @@ body {
             margin: 0 auto 24px;
         }
     }
-    .services {
-        &::before {
-            width: 25px;
-        }
-        &::after {
-            width: 25px;
-        }
-    }
     .action > .title {
-        padding: 0 3px;
         word-spacing: -7px;
     }
     .list__item {
         &-text {
-           width: 85%; 
+           width: 85%;
         }
     }
     .copy {
