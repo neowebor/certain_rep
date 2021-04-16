@@ -1,0 +1,43 @@
+@import 'reset';
+
+body {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 17px;
+    min-width: 320px;
+}    
+         
+.container  {   
+    width: 90%; 
+    max-width: 1170px;      
+    margin: 0 auto; 
+}    
+    
+.btn {     
+    width: 200px;   
+    height: 55px;    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    transition: all .2s ease; 
+    box-shadow: 1px 2px 6px 0 rgb(0 0 0 / 50%); 
+    &:hover {
+        transform: scale(1.04);
+    }  
+ }              
+                                  
+.block h2 {            
+    font-weight: bold;  
+    font-size: 90px;           
+    color: #fff; 
+}           
+        
+@import 'white-block';   
+@import 'blue-block'; 
+@import 'tomato'; 
+@import 'gallery';
+@import 'blueberry';   
+@import 'blog';
+@import 'contact';
+ 
+// неуспел сделать мобильное меню, но обязательно сделаю

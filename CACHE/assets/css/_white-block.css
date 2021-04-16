@@ -1,0 +1,192 @@
+.white-head {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background-color: rgba(249, 248, 251, 0.48);
+  z-index: 1;
+}
+
+.head {
+  height: 150px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.2s ease;
+}
+.head__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.head #logo {
+  transition: all 0.2s ease;
+}
+.head.fixed {
+  height: 60px;
+  box-shadow: 0 0 3px #999;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+}
+.head.fixed #logo {
+  font-size: 40px;
+}
+.head__list {
+  display: flex;
+  justify-content: space-between;
+}
+.head__list-item {
+  padding-left: 33px;
+}
+.head__list-item:last-child {
+  margin-right: 0;
+}
+.head__list-link {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+.head__list-link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ff6033;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+.head__list-link:before {
+  top: -6px;
+}
+.head__list-link:hover:before {
+  transform: scaleX(1);
+}
+.head .hamburger-btn {
+  display: none;
+}
+.head .hamburger-btn__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.head .hamburger-btn__link--black {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+}
+.head .hamburger-btn__link--black:before, .head .hamburger-btn__link--black:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+  left: 0;
+}
+.head .hamburger-btn__link--black:before {
+  top: 10px;
+}
+.head .hamburger-btn__link--black:after {
+  top: 20px;
+}
+
+.container-bg {
+  color: #262626;
+  position: relative;
+  background: #f9f8fb url(../images/fon.png) bottom right 200px/auto 100% no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 349px 0 404px;
+}
+
+.white-block__wrap {
+  width: 33.5%;
+}
+.white-block__title {
+  font-size: 60px;
+  color: #262626;
+  font-weight: 900;
+  margin: 0 0 14px -3px;
+}
+.white-block__text {
+  color: #262626;
+  line-height: 1.59;
+  letter-spacing: -0.07px;
+  margin-bottom: 27px;
+}
+.white-block__btn-mouse {
+  position: absolute;
+  height: 40px;
+  width: 24px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  bottom: 69px;
+  left: calc(50% - 11px);
+}
+.white-block__btn-mouse:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 11px;
+  border-radius: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 21px;
+  left: 41.4%;
+}
+.white-block .btn-white {
+  background-color: #ff6033;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.white-block .btn-white__link {
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .container-bg {
+    background: #f9f8fb url(../images/fon.png) bottom -100px right 70%/auto 100% no-repeat;
+  }
+}
+@media screen and (max-width: 947px) {
+  .white-block__wrap {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 906px) {
+  .white-block__wrap {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .head__menu {
+    display: none;
+  }
+
+  .head .hamburger-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 770px) {
+  .container-bg {
+    padding-top: 268px;
+  }
+}
+@media screen and (max-width: 636px) {
+  .white-block__wrap {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .white-block__wrap {
+    width: 100%;
+  }
+}
