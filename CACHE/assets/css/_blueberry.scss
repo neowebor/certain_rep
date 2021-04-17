@@ -1,5 +1,5 @@
 section.blueberry-block {
-    background: url(../images/background-blueberry.png) top right 200px no-repeat;
+    background: url(/assets/images/background-blueberry.png) top right 200px no-repeat;
 }
  
 .blueberry {
@@ -10,14 +10,13 @@ section.blueberry-block {
         &-title {
             font-size: 40px;
             line-height: 0.68;
-            margin-bottom: 1px;
+            margin-bottom: 34px;
             font-weight: 700;
         }
         &-text {
             font-size: 17px;
             line-height: 1.59;
             margin-bottom: 31px;
-            margin-left: -4px;
         }
     }
     &__actions {
