@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="header__logo" href="#">
+                <svg>
+                    <use xlink:href="assets/svg/sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Desitnations</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Hotels</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Flights</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Bookings</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Login</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Тут должно быть что-то (наверное select) с помощью которого выезжает списочек и выбирают язык страницы -->
+        </header>
+        <main>
+            <section class="first-page">
+                <div class="first-page__promo">Best Destinations around the world</div>
+                <h2 class="first-page__title">Travel, enjoy and live a new and full life</h2>
+                <img class="first-page__decorate" src="assets/images/Decore.png" alt="red-line">
+                <div class="first-page__descr">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</div>
+                <div class="first-page__link-wrap link">
+                    <div class="link__item">
+                        <a class="link__item--yellow" href="#">Find out more</a>
+                    </div>
+                    <div class="link__btn">
+                        <a class="link__btn-play" href="#"></a>
+                    </div>
+                    <span>Play Demo</span>
+                </div>
+            </section>
+            <section class="category">
+                <div class="category__promo">Category</div>
+                <h2 class="category__title">We Offer Best Services</h2>
+                <img class="crosess" src="assets/images/crosess.png" alt="">
+                <ul class="category__list">
+                    <li class="category__list-item">
+                        <svg class="icon-1">
+                            <use xlink:href="assets/svg/sprite.svg#calculated-weather"></use>
+                        </svg>
+                        <div class="category__list-title">Calculated Weather</div>
+                        <div class="category__list-descr">Built Wicket longer admire do barton vanity itself do in it.</div>
+                    </li>
+                    <li class="category__list-item">
+                        <img src="assets/images/samolet.png" alt="">
+                        <div class="category__list-title">Best Flights</div>
+                        <div class="category__list-descr">Engrossed listening. Park gate sell they west hard for the.</div>
+                    </li>
+                    <li class="category__list-item">
+                        <img class="icon-3" src="assets/images/local-events.png" alt="microphone">
+                        <div class="category__list-title">Local Events</div>
+                        <div class="category__list-descr">Barton vanity itself do in it. Preferd to men it engrossed listening. </div>
+                    </li>
+                    <li class="category__list-item">
+                        <svg class="icon-4">
+                            <use xlink:href="assets/svg/sprite.svg#customization"></use>
+                        </svg>
+                        <div class="category__list-title">Customization</div>
+                        <div class="category__list-descr">We deliver outsourced
+                            aviation services for
+                            military customers</div>
+                    </li>
+                </ul>
+            </section>
+            <section class="top-selling">
+                <div class="top-selling__promo">Top Selling</div>
+                <h2 class="top-selling__title">Top Destinations</h2>
+                <ul class="top-selling__list card">
+                    <li class="card__item">
+                        <img src="assets/images/photo-1.png" alt="Rome">
+                        <div class="card__info">
+                            <div class="card__info-wrap">
+                                <div class="card__info-title">Rome, Italty</div>
+                                <div class="card__info-price">&#36;5,42k</div>
+                            </div>
+                            <div class="card__info-duration">
+                                <svg>
+                                    <use xlink:href="assets/svg/sprite.svg#cursor"></use>
+                                </svg>
+                                <span>10 Days Trip</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card__item">
+                        <img src="assets/images/photo-2.png" alt="London">
+                        <div class="card__info">
+                            <div class="card__info-wrap">
+                                <div class="card__info-title">London, UK</div>
+                                <div class="card__info-price">&#36;4,2k</div>
+                            </div>
+                            <div class="card__info-duration">
+                                <svg>
+                                    <use xlink:href="assets/svg/sprite.svg#cursor"></use>
+                                </svg>
+                                <span>12 Days Trip</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card__item">
+                        <img src="assets/images/photo-3.png" alt="Europe">
+                        <div class="card__info">
+                            <div class="card__info-wrap">
+                                <div class="card__info-title">Full Europe</div>
+                                <div class="card__info-price">&#36;15k</div>
+                            </div>
+                            <div class="card__info-duration">
+                                <svg>
+                                    <use xlink:href="assets/svg/sprite.svg#cursor"></use>
+                                </svg>
+                                <span>28 Days Trip</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1>Hello</h1>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
