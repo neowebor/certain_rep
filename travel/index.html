@@ -6,45 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/hamburger.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a class="header__logo" href="#">
+
+    <div id="mobile-menu-block">
+        <div class="mmb-top">
+            <div class="mmb-logo">
                 <svg>
                     <use xlink:href="assets/svg/sprite.svg#logo"></use>
                 </svg>
-            </a>
-            <nav class="header__menu menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Desitnations</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Hotels</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Flights</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Bookings</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Login</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Sign up</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="hamburger_btn">
-                <a href="#">
-                    <span></span>
-                </a>
             </div>
-            <!-- Тут должно быть что-то (наверное select) с помощью которого выезжает списочек и выбирают язык страницы -->
-        </header>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="header__menu mobile-menu">
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Desitnations</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Hotels</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Flights</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Bookings</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Login</a>
+                </li>
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">Sign up</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menu-shadow"></div>
+
+    <a href="javascript:void(0)" class="to-top"></a>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a class="header__logo" href="#">
+                    <svg>
+                        <use xlink:href="assets/svg/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Desitnations</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Hotels</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Flights</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Bookings</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Login</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <div class="hamburger_btn">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div> -->
+                <button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <!-- Тут должно быть что-то (наверное select) с помощью которого выезжает списочек и выбирают язык страницы -->
+            </div>
+        </div>
+    </header>
+    <div class="container">
         <main>
             <section class="first-page">
                 <div class="first-page__promo">Best Destinations around the world</div>
@@ -379,5 +430,36 @@
             </footer>
         </main>
     </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+         $(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop()>30) {
+                    $("header").addClass("fixed");
+                } else {
+                    $("header").removeClass("fixed");
+                }
+            });
+
+            $(".hamburger, #menu-shadow").click(function(){
+                $(".hamburger").toggleClass("is-active");
+                $("body").toggleClass("open");
+                $("body").toggleClass("lock");
+            });
+
+            $(window).scroll(function(){
+                if($(window).scrollTop()>500) {
+                    $("body .to-top").addClass("to-top-block");
+                } else {
+                    $("body .to-top").removeClass("to-top-block");
+                }
+            });
+
+            $(".to-top").click(function(){
+                $("html, body").animate({scrollTop:0}, 400);
+            });
+         });
+    </script>
 </body>
 </html>

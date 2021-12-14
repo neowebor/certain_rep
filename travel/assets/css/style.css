@@ -28,12 +28,31 @@ body {
   width: 90%;
   max-width: 1196px;
   margin: 0 auto;
+  height: 100%;
+}
+
+main {
+  padding-top: 207px;
 }
 
 .header {
-  margin: 47px 0 130px;
+  height: 133px;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.header__wrap {
   display: flex;
   justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.header.fixed {
+  height: 60px;
+  box-shadow: 0 0 3px #999;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
 }
 .header__logo {
   display: flex;
@@ -83,37 +102,117 @@ body {
   border: 1px solid #212832;
 }
 
-.hamburger_btn {
+.hamburger {
   display: none;
 }
-.hamburger_btn a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-}
-.hamburger_btn a span {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #000;
-}
-.hamburger_btn a span:before, .hamburger_btn a span:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #000;
+
+#menu-shadow {
+  position: fixed;
   left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+  display: none;
+  z-index: 10000;
 }
-.hamburger_btn a span:before {
+
+#mobile-menu-block {
+  position: fixed;
+  right: -110%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  z-index: 10001;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 5px #000;
+}
+#mobile-menu-block .mobile-menu {
+  height: calc(100vh - 80px);
+  overflow-y: scroll;
+}
+#mobile-menu-block .mobile-menu .menu__list .menu__list-item {
+  border-bottom: 1px solid #4d4d4d;
+}
+#mobile-menu-block .mobile-menu .menu__list .menu__list-link {
+  display: inline-block;
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #232323;
+  width: 100%;
+}
+
+.open #menu-shadow {
+  display: block;
+}
+
+.open #mobile-menu-block {
+  right: 0;
+}
+
+.mmb-top {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #eeeeee;
+  align-items: center;
+  border-bottom: 1px solid #4d4d4d;
+}
+.mmb-top .mmb-logo {
+  font-size: 30px;
+}
+.mmb-top .mmb-logo svg {
+  width: 117px;
+  height: 36px;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.to-top:after, .to-top:before {
+  content: "";
+  display: block;
+  background-color: #000;
+  position: absolute;
+}
+.to-top:after {
+  left: 23px;
+  top: 9px;
+  width: 2px;
+  height: 32px;
+}
+.to-top:before {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  left: 17px;
   top: 10px;
+  transform: rotate(135deg);
 }
-.hamburger_btn a span:after {
-  top: 20px;
+
+.to-top-block {
+  display: block;
 }
 
 .first-page {
@@ -901,6 +1000,11 @@ body {
   height: 13px;
 }
 
+@media screen and (max-width: 1590px) {
+  .to-top-block {
+    display: none;
+  }
+}
 @media screen and (max-width: 1315px) {
   .category .crosess {
     right: -60px;
@@ -964,7 +1068,7 @@ body {
     display: none;
   }
 
-  .hamburger_btn {
+  .hamburger {
     display: block;
   }
 
@@ -976,6 +1080,10 @@ body {
     font-size: 60px;
     width: 400px;
     line-height: inherit;
+  }
+
+  main {
+    padding-top: 140px;
   }
 }
 @media screen and (max-width: 1090px) {
