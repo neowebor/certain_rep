@@ -24,7 +24,10 @@ a {
 }
 
 body {
-  background-color: #a7b9db;
+  background: #a7b9db;
+  background: -moz-linear-gradient(180deg, #a7b9db 0%, #183978 100%);
+  background: -webkit-linear-gradient(180deg, #a7b9db 0%, #183978 100%);
+  background: linear-gradient(180deg, #a7b9db 0%, #183978 100%);
   font-family: "Lucida Sans Unicode";
 }
 
@@ -32,6 +35,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .block__title {
