@@ -1,0 +1,115 @@
+@import 'reset';
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #a7b9db;
+    font-family: 'Lucida Sans Unicode';
+}
+
+.block {
+    margin-top: 80px;
+    &__title { 
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    .bg {
+        background-color: #efefef;
+        padding: 15px;
+        border-radius: 15px;
+        border: 3px solid #6795eb;
+    }
+}
+
+.main {
+    padding: 15px;
+    background-color: #efefef;
+    &__title {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__descr {
+        p {
+            font-size: 18px;
+            padding: 0 0 20px 15px;
+        }
+        &-skills {
+            span {
+                font-size: 17px;
+                font-weight: 700;
+            }
+        }
+        span {
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+    &__links {
+        display: flex;
+        &-item {
+            text-align: center;
+            width: 180px;
+            padding: 20px 0;
+            margin-right: 20px;
+            background-color: #efefef;
+            border: 2px solid #6795eb;
+            border-radius: 15px;
+            color: #000;
+            font-size: 20px;
+            transition: all .2s ease;
+            &:hover {
+                background-color: #6795eb;
+                color: #efefef;
+            }
+        }
+    }
+}
+
+.list {
+    padding: 20px 0 30px 40px;
+    position: relative;
+    &__item {
+        padding-bottom: 3px;
+        &::before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 6px;
+            border-top: 2px solid #000; 
+            border-right: 2px solid #000; 
+            position: absolute;
+            transform: rotate(125deg);
+            left: 10px;
+        }
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    .before1::before {
+        top: 28px;
+    }
+    .before2::before {
+        top: 58px;
+    }
+    .before3::before {
+        top: 85px;
+    }
+    .before4::before {
+        top: 113px;
+    }
+    .before5::before {
+        top: 140px;
+    }
+    .before6::before {
+        top: 170px;
+    }
+}
