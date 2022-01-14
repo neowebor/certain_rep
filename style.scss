@@ -11,8 +11,13 @@ body {
     font-family: 'Lucida Sans Unicode';
 }
 
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .block {
-    margin-top: 80px;
     &__title { 
         font-size: 35px;
         text-align: center;
