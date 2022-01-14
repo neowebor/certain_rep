@@ -52,6 +52,9 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
 }
+.main__descr {
+  margin-bottom: 20px;
+}
 .main__descr p {
   font-size: 18px;
   padding: 0 0 20px 15px;
@@ -68,6 +71,7 @@ body {
 }
 .main__links {
   display: flex;
+  padding-left: 20px;
 }
 .main__links-item {
   text-align: center;

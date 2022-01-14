@@ -36,6 +36,7 @@ body {
         margin-bottom: 10px;
     }
     &__descr {
+        margin-bottom: 20px;
         p {
             font-size: 18px;
             padding: 0 0 20px 15px;
@@ -55,6 +56,7 @@ body {
     }
     &__links {
         display: flex;
+        padding-left: 20px;
         &-item {
             text-align: center;
             width: 180px;
