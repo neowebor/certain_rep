@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Autor Med';
+    src: url('../font/AutorMedium.woff2') format('woff2'),
+    url('../font/AutorMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

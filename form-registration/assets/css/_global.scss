@@ -1,0 +1,76 @@
+body {
+    font-family: 'Autor Med';
+}
+
+main {
+    padding: 50px 200px;
+}
+
+.section {
+    &__title {    
+        color: #051655;
+        font-size: 50px;
+        line-height: 56px;
+        margin-bottom: 10px;
+    }
+    &__text {
+        color: #747887;
+        font-size: 20px;
+        line-height: 22px;
+        max-width: 700px;
+        margin-bottom: 40px;
+        &.mb10 {
+            margin-bottom: 10px;
+        }
+        &.mb60 {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #EB3D35;
+    padding: 18px 48px; 
+    color: #fff;
+    font-family: 'Autor Med';
+    font-size: 22px;
+    line-height: 24px;
+    border: 1px solid transparent;
+    transition: all .2s ease;
+    max-width: fit-content;
+    cursor: pointer;
+
+    svg {
+        fill: white;
+    }
+
+    &:hover {
+        background-color: #fff;
+        border-color: #EB3D35;
+        color: #EB3D35;
+        svg {
+            fill: #EB3D35
+        }
+    }
+
+    &__outline {
+        border: 1px solid #E5E4E1;
+        font-size: 22px;
+        color: #051655;
+        background-color: #fff;
+        &:hover {
+            background-color: #051655;
+            border-color: #E5E4E1;
+            color: #fff;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    margin-bottom: 88px; 
+    max-width: fit-content;
+}

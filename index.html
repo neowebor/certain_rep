@@ -4,39 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homework</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="style.min.css">
-    <link rel="stylesheet" href="font.css">
 </head>
 <body>
-    <div class="wrap">
-        <div class="container">
-            <div class="block">
-                <div class="block__title bg">Резюме</div>
-                <div class="block__descr main bg">
-                    <div class="main__title">Немного о себе:</div>
-                    <div class="main__descr">
-                        <p>Меня зовут Кирилл. Мне 18 лет. Я живу в Украине и недавно закончил обучение в Beetroot Academy на специальность Front-end developer. В свободное время увлекаюсь спортом. Но в основном всё время посвящаю изучению IT-технологий.</p>
-                        <div class="main__descr-skills">
-                            <span>В мои профессиональные навыки входит:</span>
-                            <ul class="main__list list">
-                                <li class="list__item before1">HTML5, CSS3</li>
-                                <li class="list__item before2">Java Script ES6</li>
-                                <li class="list__item before3">Использование пре-процессора SASS</li>
-                                <li class="list__item before4">Вёрстка с использованием методологии BEM</li>
-                                <li class="list__item before5">Адаптивная, кроссбраузерная вёрстка</li>
-                                <li class="list__item before6">Понимание Bootstrap 5, JQuery</li>
-                            </ul>
-                        </div>
-                        <span>Примеры моих работ:</span>
-                        <div class="main__links">
-                            <a href="travel/index.html" class="main__links-item" target="_blank">Travel</a>
-                            <a href="bhramaon/index.html" class="main__links-item" target="_blank">Bhramaon</a>
-                        </div>
-                    </div>
-                </div>
+    <main class="main">
+        <section class="main__block section">
+            <h2>Привет, человек!</h2>
+            <div class="ui-element_wrap about">
+                <span class="circle"></span>
+                <div class="title">Обо мне</div>
             </div>
-        </div>
-    </div>
+            <div class="section__about">
+                <p>Меня зовут Кирилл. Мне 18 лет и я из Украины. Моя мечта - стать востребованным Full stack разработчиком. На данный момент я нахожусь в стадии обучения. Я проходил курс от Beetroot Academy на специальность Front-end разработчик.</p>
+                <p>В свободное от обучения время, я люблю заниматься спортом и иногда смотреть фильмы.</p>
+                <p>Я целеустремлённый и всё время посвящаю изучению IT-технологий связанных с Front-end. Отлично работаю в команде и могу найти общий язык с человеком. Усидчивый, обучаемый и всегда добиваюсь своей цели. Пишу аккуратный код. Стараюсь рефакторить и изменять его, если чувствую, что могу сделать его лучше.</p>
+            </div>
+            <div class="ui-element_wrap skills">
+                <span class="circle"></span>
+                <div class="title">Мои профессиональные навыки</div>
+            </div>
+            <div class="section__skills">
+                <ul>
+                    <li>- HTML5, CSS3</li>
+                    <li>- JavaScript</li>
+                    <li>- React (базовый уровень)</li>
+                    <li>- Использование пре-процессоров SCSS</li>
+                    <li>- БЭМ</li>
+                    <li>- Кроссбраузерная, адаптивная вёрстка</li>
+                    <li>- Jquery, Bootstrap</li>
+                </ul>
+            </div>
+            <div class="ui-element_wrap projects">
+                <span class="circle"></span>
+                <div class="title">Примеры моих работ</div>
+            </div>
+            <div class="section__projects">
+                <a href="./bhramaon/index.html" target="_blank">Bhramaon</a>
+                <a href="./travel/index.html" target="_blank">Travel</a>
+                <a href="./form-registration/index.html" target="_blank">Form registration</a>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
