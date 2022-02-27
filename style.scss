@@ -34,7 +34,7 @@ body {
 }
 
 .section {
-    &__about, &__skills, &__projects {
+    &__about, &__skills, &__projects, &__info {
         opacity: 0;
         transform: translate(-20%);
         transition: all .5s ease;
@@ -76,8 +76,12 @@ body {
             }
         }
         &.active {
-            height: 80px;
+            height: 80px; 
+            max-width: 90%;
         }
+    }
+    &__info {
+        
     }
 }
 

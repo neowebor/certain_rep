@@ -5,6 +5,7 @@ function stepForm() {
     const form = document.querySelector('.steps__form')
     const stepNumbers = document.querySelectorAll('.step__number')
     const progress = document.querySelector('.progress__success')
+    const success__registration = document.querySelector('.success__registration')
 
     form.addEventListener('submit', e => e.preventDefault())
 
@@ -20,6 +21,9 @@ function stepForm() {
         updateFormSteps()
     })
     nextBtn.addEventListener('click', () => {
+        if(formStep === steps.length - 1) {
+            return
+        }
         formStep++;
         updateFormSteps()
     })
@@ -46,7 +50,12 @@ function stepForm() {
 
         if(formStep === steps.length - 1) {
             nextBtn.innerHTML = 'Finish';
-            success__registration.classList.add('active')
+            nextBtn.addEventListener('click', () => {
+                success__registration.classList.add('active')
+            })
+            success__registration.addEventListener('click', () => {
+                success__registration.classList.remove('active')
+            }) 
         } else {
             nextBtn.innerHTML = 'Next';        
         }
