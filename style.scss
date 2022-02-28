@@ -67,8 +67,7 @@ body {
             color: #000;
             background-color: #eee;
             border: 1px solid #000;
-            border-radius: 15px;
-            margin-right: 10px;
+            border-radius: 15px;        
             padding: 10px;
             transition: all .2s ease;
             &:hover {
@@ -76,12 +75,12 @@ body {
             }
         }
         &.active {
-            height: 80px; 
-            max-width: 90%;
+            height: auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; 
+            max-width: 90%; 
         }
-    }
-    &__info {
-        
     }
 }
 
